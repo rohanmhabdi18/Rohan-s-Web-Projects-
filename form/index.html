@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <h2> Registration Form </h2>
+        <div class="form-container">
+        <form>
+            <div class="name">
+               <i class="fa-regular fa-user"></i>
+               <input type="text" placeholder="User Name" class="username">
+            </div>
+            <br>
+            <div class = "c">
+               <i class="fa-regular fa-envelope"></i>
+               <input type="email"placeholder="Your Email" class="email">
+            </div>
+            <br>
+            <div class="password">
+               <i class="fa-solid fa-user-lock"></i>
+               <input type="password"placeholder="Password"class="pass">
+            </div>
+            <br>
+            <div class="password">
+               <i class="fa-solid fa-user-lock"></i>
+               <input type="password"placeholder="Confirm Password"class="pass">
+            </div>
+            <br>
+            <div class="gender">
+               <label><input type="radio" name="gender" class="gender-radio"> Male</label>
+               <label><input type="radio" name="gender" class="gender-radio"> Female</label>
+            </div>
+            <br>
+            <div class="selection-country">
+               <i class="fa-solid fa-flag"></i>
+               <select name="country" id="country"class="country-select">
+                  <option value="">Select Country</option>
+                  <option value="india">India</option>
+                  <option value="usa">USA</option>
+                  <option value="uk">UK</option>
+               </select>
+            </div>
+            <br>
+            <div class="terms-and-conditions">
+                <input type="checkbox" id="terms" name="terms and conditions" class="terms">
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+            <br>
+            <div class="submit">
+               <input type="submit" value="Register" onclick="window.location.href='https://itsrohanmhabdi.vercel.app/'; return false;">
+            </div>
+            
+        </form>
+    </div>
+    </div>
+</body>
+</html>

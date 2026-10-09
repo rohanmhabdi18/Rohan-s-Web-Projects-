@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-size: 24px;
+    color: #ffffff;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+    
+}
+.main{
+    margin-top: 4%;
+   height: 85vh;
+   width: 30vw;
+  /* background-color: rgba(0, 0, 0, 0.3); Adds contrast with a tinted background */
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Proper box-shadow (x-offset, y-offset, blur, color) */
+   border-radius: 20px;
+   border-top: .5px solid rgba(255, 255, 255, 0.7);
+   border-right: .5px solid rgba(255, 255, 255, 0.7);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+h2{
+    
+    /* font-family: sans-serif; */
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-size: 2em;
+    letter-spacing: 0.5px;
+}
+.name {
+    height: 30px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.username {
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 10px;
+    height: 100%;
+    width: 100%;
+}
+.c{
+    height: 30px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.email{
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 10px;
+    height: 100%;
+    width: 100%; /* stretches to match the full width of the form, like the first/last name combined */
+}
+.password{
+    height: 30px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.pass{
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 10px;
+    height: 100%;
+    width: 100%; /* stretches to match the full width of the form, like the first/last name combined */
+}
+.gender{
+    height: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.selection-country{
+    height: 30px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.country-select{
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 10px;
+    height: 100%;
+    width: 100%;
+    
+    color: #333; /* dark grey for better readability */
+    cursor: pointer;
+}
+/* Layout fixes for the input containers */
+.name, .c, .password, .selection-country {
+    position: relative;
+    height: 45px; /* Increased height for a cleaner, modern look */
+    width: 85%; /* Keeps it proportional to the main card */
+    margin: 0 auto; /* Centers the inputs inside the form */
+}
+
+/* Input fixes to prevent overflow and overlap */
+.username, .email, .pass, .country-select {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 45px;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Added focus states for contrast and interaction */
+.username:focus, .email:focus, .pass:focus, .country-select:focus {
+    border-color: #00ff00; /* match green tick */
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.3);
+}
+
+/* Improve placeholder readability */
+.username::placeholder, .email::placeholder, .pass::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Country select specific styling */
+.country-select {
+    color: rgba(255, 255, 255, 0.8);
+}
+.country-select option {
+    background-color: #333; /* dark background for dropdown so options are visible */
+    color: white;
+}
+
+/* Icon positioning */
+i {
+    position: absolute;
+    left: 15px;
+    color: rgba(255, 255, 255, 0.8); /* Improved contrast on dark/transparent background */
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Change icon color on input focus */
+.name:focus-within i, .c:focus-within i, .password:focus-within i, .selection-country:focus-within i {
+    color: #00ff00;
+}
+
+/* Submit Button Styling */
+.submit {
+    width: 85%;
+    margin: 20px auto 0;
+}
+.submit input {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    color: #00ff00;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.submit input:hover {
+    background: linear-gradient(#007991, #78ffd6);
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
+}
+
+/* Checkbox styling */
+.terms-and-conditions {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 85%;
+    margin: 10px auto;
+}
+
+.terms-and-conditions label {
+    cursor: pointer;
+}
+
+.terms {
+    appearance: none;
+    -webkit-appearance: none;
+    min-width: 24px;
+    height: 24px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+    transition: all 0.3s ease;
+}
+
+.terms::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid #00ff00; /* Green tick */
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg) scale(0);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.terms:checked {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: #00ff00;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.terms:checked::after {
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+}
